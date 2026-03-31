@@ -1,1 +1,4 @@
-console.log("Hello from Tesseracs (JavaScript template)");
+import { Greeter } from "./src/greeting.js";
+
+const g = new Greeter("Tesseracs");
+console.log(g.greet());
