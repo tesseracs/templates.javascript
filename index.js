@@ -1,4 +1,7 @@
-import { Greeter } from "./src/greeting.js";
+import { projectSnapshot } from "./src/data.js";
+import { buildProjectBrief } from "./src/analysis.js";
+import { renderBrief } from "./src/render.js";
 
-const g = new Greeter("Tesseracs");
-console.log(g.greet());
+const brief = buildProjectBrief(projectSnapshot);
+
+console.log(renderBrief(brief));
